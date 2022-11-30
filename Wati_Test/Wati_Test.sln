@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wati", "Wati\Wati.csproj", "{D54FBAFB-B263-44CD-BE62-E209DF71B485}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{B4BC8F81-83A1-40AB-BF16-B7386E43977F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D54FBAFB-B263-44CD-BE62-E209DF71B485}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D54FBAFB-B263-44CD-BE62-E209DF71B485}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D54FBAFB-B263-44CD-BE62-E209DF71B485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BC8F81-83A1-40AB-BF16-B7386E43977F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BC8F81-83A1-40AB-BF16-B7386E43977F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BC8F81-83A1-40AB-BF16-B7386E43977F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BC8F81-83A1-40AB-BF16-B7386E43977F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

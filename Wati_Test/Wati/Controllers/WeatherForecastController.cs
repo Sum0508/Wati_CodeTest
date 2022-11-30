@@ -12,10 +12,12 @@ namespace Wati.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        private IRepo _Repo;
+        
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IRepo repo)
         {
             _logger = logger;
+            _Repo = repo;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
@@ -34,7 +36,16 @@ namespace Wati.Controllers
         [Route("/add")]
         public IActionResult Sum([FromBody] Request req)
         {
-            return this.Ok(req.Num1 + req.Num2);
+            var result = AddCode(req.Num1, req.Num2);
+
+            this._Repo.Add(req.Num1, req.Num2, result);
+
+            return this.Ok(result);
+        }
+
+        public int AddCode(int n1, int n2)
+        {
+            return n1 + n2;
         }
     }
 }
